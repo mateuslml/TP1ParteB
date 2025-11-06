@@ -107,7 +107,7 @@ main(int argc, char* argv[])
 
         BulkSendHelper src("ns3::TcpSocketFactory",
                            Address(InetSocketAddress(destAddr, port)));
-        src.SetAttribute("MaxBytes", UintegerValue(0)); // envia indefinidamente
+        src.SetAttribute("MaxBytes", UintegerValue(0)); 
         sourcesApps.Add(src.Install(source));
     }
 
